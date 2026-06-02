@@ -3,6 +3,7 @@
 ## Getting Started
 
 ### Accessing Admin Dashboard
+
 1. Navigate to https://admin.bettraction.com
 2. Login with your admin credentials
 3. Complete 2FA if enabled
@@ -10,6 +11,7 @@
 ## Dashboard Features
 
 ### Analytics Overview
+
 - Total users
 - Total bets
 - Total volume
@@ -20,6 +22,7 @@
 - Charts and graphs
 
 ### Pending Deposits
+
 - List of pending deposits
 - Verify on-chain transactions
 - Confirm deposits
@@ -27,6 +30,7 @@
 - View transaction details on BaseScan
 
 ### Pending Payouts
+
 - List of pending payouts
 - Review payout requests
 - Process payouts
@@ -34,6 +38,7 @@
 - View transaction history
 
 ### Bets
+
 - View all bets
 - Filter by status
 - Resolve disputes
@@ -42,6 +47,7 @@
 - Audit history
 
 ### Users
+
 - View all users
 - Ban/unban users
 - Reset user passwords
@@ -50,6 +56,7 @@
 - View user balances
 
 ### Reports
+
 - Export data to CSV
 - Generate financial reports
 - User activity reports
@@ -57,6 +64,7 @@
 - Custom date ranges
 
 ### Disputes
+
 - View open disputes
 - Review evidence
 - Make decisions
@@ -64,12 +72,14 @@
 - Document resolutions
 
 ### Notifications
+
 - Send announcements
 - Send user-specific notifications
 - Notification templates
 - Scheduled notifications
 
 ### Audit Logs
+
 - View all admin actions
 - Filter by admin, action, date
 - Export logs
@@ -78,6 +88,7 @@
 ## Security Best Practices
 
 ### Account Security
+
 - Use strong passwords
 - Enable 2FA
 - Don't share credentials
@@ -85,6 +96,7 @@
 - Use dedicated admin devices
 
 ### Operational Security
+
 - Review pending items daily
 - Document all decisions
 - Double-check payout addresses
@@ -94,6 +106,7 @@
 ## Workflows
 
 ### Resolving a Bet
+
 1. Navigate to Bets page
 2. Find the disputed bet
 3. Review all evidence
@@ -103,6 +116,7 @@
 7. Confirm
 
 ### Processing a Payout
+
 1. Navigate to Pending Payouts
 2. Review payout request
 3. Verify bet was resolved correctly
@@ -112,6 +126,7 @@
 7. Verify on BaseScan
 
 ### Banning a User
+
 1. Navigate to Users page
 2. Find the user
 3. Click "Ban User"

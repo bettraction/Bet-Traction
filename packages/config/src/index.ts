@@ -66,7 +66,8 @@ const config: AppConfig = {
   jwt: {
     secret: process.env.JWT_SECRET || 'your-super-secret-jwt-key-change-this-in-production',
     expiresIn: process.env.JWT_EXPIRES_IN || '7d',
-    refreshSecret: process.env.JWT_REFRESH_SECRET || 'your-super-secret-refresh-token-key-change-this',
+    refreshSecret:
+      process.env.JWT_REFRESH_SECRET || 'your-super-secret-refresh-token-key-change-this',
     refreshExpiresIn: process.env.JWT_REFRESH_EXPIRES_IN || '30d',
   },
   network: {
@@ -75,7 +76,8 @@ const config: AppConfig = {
     rpcUrl: process.env.NETWORK_RPC_URL || 'https://mainnet.base.org',
     explorerUrl: process.env.NETWORK_EXPLORER_URL || 'https://basescan.org',
   },
-  vaultWalletAddress: process.env.VAULT_WALLET_ADDRESS || '0xc1A020BE6548D70319a31060E32f1E2A8Cf8d930',
+  vaultWalletAddress:
+    process.env.VAULT_WALLET_ADDRESS || '0xc1A020BE6548D70319a31060E32f1E2A8Cf8d930',
   sentry: {
     dsn: process.env.SENTRY_DSN,
     environment: process.env.SENTRY_ENVIRONMENT || 'development',

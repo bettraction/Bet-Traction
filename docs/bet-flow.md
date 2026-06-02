@@ -7,6 +7,7 @@ This document describes the complete lifecycle of a bet on BetTraction.
 ## Bet Lifecycle
 
 ### 1. Create Bet
+
 1. User connects wallet
 2. User navigates to Create Bet page
 3. User fills in:
@@ -20,6 +21,7 @@ This document describes the complete lifecycle of a bet on BetTraction.
 6. User must deposit stake into vault
 
 ### 2. Deposit Stake
+
 1. User initiates deposit from bet page
 2. Frontend shows vault address and amount
 3. User sends transaction from wallet
@@ -29,6 +31,7 @@ This document describes the complete lifecycle of a bet on BetTraction.
 7. Bet becomes available for acceptance
 
 ### 3. Accept Bet
+
 1. Another user finds the bet in Explore page
 2. User reviews bet details and terms
 3. User clicks "Accept Bet"
@@ -38,6 +41,7 @@ This document describes the complete lifecycle of a bet on BetTraction.
 7. Both users are notified
 
 ### 4. Resolve Bet
+
 1. Bet outcome is determined (per terms)
 2. Users can agree on outcome
 3. If no agreement, admin resolves
@@ -47,6 +51,7 @@ This document describes the complete lifecycle of a bet on BetTraction.
 7. Payout is initiated
 
 ### 5. Payout
+
 1. Payout is created in `pending` status
 2. Admin reviews payout
 3. Admin processes payout
@@ -59,6 +64,7 @@ This document describes the complete lifecycle of a bet on BetTraction.
 ## Statuses
 
 ### Bet Statuses
+
 - `pending`: Created, waiting for creator's deposit
 - `available`: Deposit confirmed, waiting for acceptor
 - `accepted`: Accepted by another user, in progress
@@ -66,11 +72,13 @@ This document describes the complete lifecycle of a bet on BetTraction.
 - `cancelled`: Cancelled by creator or expired
 
 ### Deposit Statuses
+
 - `pending`: Transaction sent, waiting for confirmations
 - `confirmed`: 6 confirmations, deposit credited
 - `failed`: Transaction failed or was reverted
 
 ### Payout Statuses
+
 - `pending`: Payout created, waiting for admin
 - `processing`: Admin is processing
 - `completed`: Transaction sent and confirmed
@@ -79,6 +87,7 @@ This document describes the complete lifecycle of a bet on BetTraction.
 ## Notifications
 
 Users receive notifications for:
+
 - Bet accepted
 - Bet resolved
 - Deposit confirmed

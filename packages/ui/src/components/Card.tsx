@@ -3,17 +3,15 @@ import { cn } from '../lib/utils';
 
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {}
 
-export const Card = React.forwardRef<HTMLDivElement, CardProps>(
-  ({ className, ...props }, ref) => {
-    return (
-      <div
-        ref={ref}
-        className={cn('bg-white rounded-lg border border-gray-200 shadow-sm', className)}
-        {...props}
-      />
-    );
-  }
-);
+export const Card = React.forwardRef<HTMLDivElement, CardProps>(({ className, ...props }, ref) => {
+  return (
+    <div
+      ref={ref}
+      className={cn('bg-white rounded-lg border border-gray-200 shadow-sm', className)}
+      {...props}
+    />
+  );
+});
 
 Card.displayName = 'Card';
 
@@ -21,13 +19,7 @@ export interface CardHeaderProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const CardHeader = React.forwardRef<HTMLDivElement, CardHeaderProps>(
   ({ className, ...props }, ref) => {
-    return (
-      <div
-        ref={ref}
-        className={cn('flex flex-col space-y-1.5 p-6', className)}
-        {...props}
-      />
-    );
+    return <div ref={ref} className={cn('flex flex-col space-y-1.5 p-6', className)} {...props} />;
   }
 );
 
@@ -53,13 +45,7 @@ export interface CardDescriptionProps extends React.HTMLAttributes<HTMLParagraph
 
 export const CardDescription = React.forwardRef<HTMLParagraphElement, CardDescriptionProps>(
   ({ className, ...props }, ref) => {
-    return (
-      <p
-        ref={ref}
-        className={cn('text-sm text-gray-500', className)}
-        {...props}
-      />
-    );
+    return <p ref={ref} className={cn('text-sm text-gray-500', className)} {...props} />;
   }
 );
 
@@ -69,9 +55,7 @@ export interface CardContentProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export const CardContent = React.forwardRef<HTMLDivElement, CardContentProps>(
   ({ className, ...props }, ref) => {
-    return (
-      <div ref={ref} className={cn('p-6 pt-0', className)} {...props} />
-    );
+    return <div ref={ref} className={cn('p-6 pt-0', className)} {...props} />;
   }
 );
 
@@ -81,13 +65,7 @@ export interface CardFooterProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const CardFooter = React.forwardRef<HTMLDivElement, CardFooterProps>(
   ({ className, ...props }, ref) => {
-    return (
-      <div
-        ref={ref}
-        className={cn('flex items-center p-6 pt-0', className)}
-        {...props}
-      />
-    );
+    return <div ref={ref} className={cn('flex items-center p-6 pt-0', className)} {...props} />;
   }
 );
 

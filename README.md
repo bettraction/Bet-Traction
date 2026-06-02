@@ -80,16 +80,16 @@ graph TB
 
 ## Tech Stack
 
-| Layer | Technologies |
-|-------|--------------|
-| **Frontend (Web)** | React 18, TypeScript, Vite, Tailwind CSS, RainbowKit, Wagmi, Viem |
-| **Frontend (Admin)** | React 18, TypeScript, Vite, Tailwind CSS, Recharts |
-| **Backend** | NestJS, TypeScript, TypeORM, PostgreSQL, Redis |
-| **Web3** | Base Mainnet, RainbowKit, Wagmi, Viem |
-| **DevOps** | Docker, Docker Compose, Nginx, GitHub Actions |
-| **Monitoring** | Prometheus, Grafana, Sentry |
-| **Testing** | Jest, React Testing Library, Playwright |
-| **Code Quality** | ESLint, Prettier, Husky, Commitlint, Conventional Commits |
+| Layer                | Technologies                                                      |
+| -------------------- | ----------------------------------------------------------------- |
+| **Frontend (Web)**   | React 18, TypeScript, Vite, Tailwind CSS, RainbowKit, Wagmi, Viem |
+| **Frontend (Admin)** | React 18, TypeScript, Vite, Tailwind CSS, Recharts                |
+| **Backend**          | NestJS, TypeScript, TypeORM, PostgreSQL, Redis                    |
+| **Web3**             | Base Mainnet, RainbowKit, Wagmi, Viem                             |
+| **DevOps**           | Docker, Docker Compose, Nginx, GitHub Actions                     |
+| **Monitoring**       | Prometheus, Grafana, Sentry                                       |
+| **Testing**          | Jest, React Testing Library, Playwright                           |
+| **Code Quality**     | ESLint, Prettier, Husky, Commitlint, Conventional Commits         |
 
 ## Setup Guide
 
@@ -104,28 +104,33 @@ graph TB
 ### Local Development
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/bettraction/bettraction.git
    cd bettraction
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Set up environment variables**
+
    ```bash
    cp .env.example .env
    # Edit .env with your values
    ```
 
 4. **Start services with Docker**
+
    ```bash
    docker-compose up -d postgres redis
    ```
 
 5. **Run database migrations**
+
    ```bash
    cd apps/api
    npm run migration:run
@@ -137,6 +142,7 @@ graph TB
    ```
 
 The apps will be available at:
+
 - Web App: http://localhost:5173
 - Admin Dashboard: http://localhost:5174
 - API: http://localhost:3000
@@ -179,6 +185,7 @@ See our full [Roadmap](docs/roadmap.md) for upcoming features and milestones.
 ## Security
 
 Security is our top priority. Please see our [Security Policy](SECURITY.md) for:
+
 - Responsible disclosure
 - Security contact
 - Vulnerability process
@@ -187,6 +194,7 @@ Security is our top priority. Please see our [Security Policy](SECURITY.md) for:
 ### Vault System
 
 The BetTraction Vault System uses a managed escrow model:
+
 - **Vault Wallet**: `0xc1A020BE6548D70319a31060E32f1E2A8Cf8d930`
 - All deposits are verified on-chain
 - All payouts are processed with full audit trails

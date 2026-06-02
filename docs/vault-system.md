@@ -47,6 +47,7 @@ All deposits and payouts flow through this wallet.
 ## Proof of Deposits
 
 Every deposit has:
+
 - Transaction hash
 - Block number
 - Confirmation count
@@ -57,6 +58,7 @@ Every deposit has:
 ## Proof of Payouts
 
 Every payout has:
+
 - Transaction hash
 - Block number
 - Recipient wallet address

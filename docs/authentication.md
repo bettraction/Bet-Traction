@@ -16,9 +16,11 @@ BetTraction uses wallet-based authentication with JWT tokens.
 ## Endpoints
 
 ### POST /api/v1/auth/nonce
+
 Request a nonce for signing.
 
 **Request Body:**
+
 ```json
 {
   "wallet_address": "0x1234...5678"
@@ -26,6 +28,7 @@ Request a nonce for signing.
 ```
 
 **Response:**
+
 ```json
 {
   "nonce": "Sign this message to login to BetTraction: abc123xyz",
@@ -34,9 +37,11 @@ Request a nonce for signing.
 ```
 
 ### POST /api/v1/auth/login
+
 Login with signed message.
 
 **Request Body:**
+
 ```json
 {
   "wallet_address": "0x1234...5678",
@@ -46,6 +51,7 @@ Login with signed message.
 ```
 
 **Response:**
+
 ```json
 {
   "access_token": "eyJhbGciOiJIUzI1NiIs...",
@@ -60,9 +66,11 @@ Login with signed message.
 ```
 
 ### POST /api/v1/auth/refresh
+
 Refresh access token.
 
 **Request Body:**
+
 ```json
 {
   "refresh_token": "eyJhbGciOiJIUzI1NiIs..."
@@ -70,6 +78,7 @@ Refresh access token.
 ```
 
 **Response:**
+
 ```json
 {
   "access_token": "eyJhbGciOiJIUzI1NiIs..."
@@ -77,9 +86,11 @@ Refresh access token.
 ```
 
 ### POST /api/v1/auth/logout
+
 Logout user.
 
 **Headers:**
+
 ```
 Authorization: Bearer <access_token>
 ```
@@ -87,11 +98,13 @@ Authorization: Bearer <access_token>
 ## JWT Tokens
 
 ### Access Token
+
 - Expires in 7 days
 - Used for API authentication
 - Should be sent in Authorization header
 
 ### Refresh Token
+
 - Expires in 30 days
 - Used to get new access tokens
 - Stored securely (HTTP-only cookie recommended)

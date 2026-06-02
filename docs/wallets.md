@@ -3,6 +3,7 @@
 ## Supported Wallets
 
 BetTraction uses RainbowKit, which supports:
+
 - MetaMask
 - Coinbase Wallet
 - WalletConnect
@@ -13,12 +14,14 @@ BetTraction uses RainbowKit, which supports:
 ## Network Configuration
 
 ### Base Mainnet
+
 - **Chain ID**: 8453
 - **RPC URL**: https://mainnet.base.org
 - **Explorer**: https://basescan.org
 - **Native Currency**: ETH
 
 ### Base Sepolia (Testnet)
+
 - **Chain ID**: 84532
 - **RPC URL**: https://sepolia.base.org
 - **Explorer**: https://sepolia.basescan.org
@@ -27,6 +30,7 @@ BetTraction uses RainbowKit, which supports:
 ## Adding Base to Your Wallet
 
 ### MetaMask
+
 1. Open MetaMask
 2. Go to Settings → Networks → Add Network
 3. Enter:

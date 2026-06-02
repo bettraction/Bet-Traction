@@ -14,7 +14,11 @@ export const Spinner = ({ className, size = 'md', ...props }: SpinnerProps) => {
 
   return (
     <div
-      className={cn('animate-spin rounded-full border-2 border-gray-200 border-t-blue-600', sizeClasses[size], className)}
+      className={cn(
+        'animate-spin rounded-full border-2 border-gray-200 border-t-blue-600',
+        sizeClasses[size],
+        className
+      )}
       {...props}
     />
   );

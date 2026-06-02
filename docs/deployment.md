@@ -14,12 +14,14 @@
 ### Using Docker Compose
 
 1. **Clone repository**
+
    ```bash
    git clone https://github.com/bettraction/bettraction.git
    cd bettraction
    ```
 
 2. **Set up environment**
+
    ```bash
    cp .env.production.example .env
    # Edit .env with production values
@@ -31,6 +33,7 @@
    ```
 
 ### Services
+
 - `postgres: PostgreSQL
 - `redis`: Redis
 - `api`: NestJS API
@@ -45,6 +48,7 @@ See [.env.production.example](../.env.production.example) for required variables
 ## Database Migrations
 
 Run migrations:
+
 ```bash
 docker-compose exec api npm run migration:run
 ```
@@ -58,11 +62,13 @@ docker-compose exec api npm run migration:run
 ## Backup & Restore
 
 ### Backup Database
+
 ```bash
 docker-compose exec postgres pg_dump -U postgres bettraction > backup.sql
 ```
 
 ### Restore Database
+
 ```bash
 docker-compose exec -T postgres psql -U postgres bettraction < backup.sql
 ```
@@ -84,6 +90,7 @@ See [Nginx Configuration](../infrastructure/nginx/nginx.conf)
 ## CI/CD
 
 GitHub Actions workflows:
+
 - `lint.yml` - Lint code
 - `test.yml` - Run tests
 - `build.yml` - Build project

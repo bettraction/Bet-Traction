@@ -7,6 +7,7 @@ This document outlines the development roadmap for BetTraction.
 ## Current Status: MVP
 
 **Completed:**
+
 - ✅ Landing Page
 - ✅ Wallet Connection (RainbowKit)
 - ✅ Create Bet
@@ -23,6 +24,7 @@ This document outlines the development roadmap for BetTraction.
 ## Next Phases
 
 ### Phase 1: Beta (Q3 2026)
+
 - [ ] Dispute Resolution System
 - [ ] Referral Program
 - [ ] Enhanced Leaderboards
@@ -34,6 +36,7 @@ This document outlines the development roadmap for BetTraction.
 - [ ] Security Audit
 
 ### Phase 2: Mainnet Launch (Q4 2026)
+
 - [ ] Full Security Audit
 - [ ] Public Beta Launch
 - [ ] KYC/AML Integration (optional)
@@ -45,6 +48,7 @@ This document outlines the development roadmap for BetTraction.
 - [ ] Partnership Announcements
 
 ### Phase 3: Growth (Q1 2027)
+
 - [ ] Mobile App (iOS)
 - [ ] Mobile App (Android)
 - [ ] DAO Governance
@@ -56,6 +60,7 @@ This document outlines the development roadmap for BetTraction.
 - [ ] Live Betting
 
 ### Phase 4: Expansion (Q2 2027)
+
 - [ ] Esports Integration
 - [ ] Sports Betting
 - [ ] Prediction Markets

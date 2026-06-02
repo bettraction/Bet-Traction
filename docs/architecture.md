@@ -7,6 +7,7 @@ BetTraction uses a monorepo architecture with the following components:
 ## Frontend
 
 ### Web App (apps/web)
+
 - **Stack**: React 18 + Vite + TypeScript + Tailwind CSS
 - **Features**:
   - Landing Page
@@ -23,6 +24,7 @@ BetTraction uses a monorepo architecture with the following components:
 - **Wallet Integration**: RainbowKit + Wagmi + Viem
 
 ### Admin Dashboard (apps/admin)
+
 - **Stack**: React 18 + Vite + TypeScript + Tailwind CSS + Recharts
 - **Features**:
   - Login
@@ -40,6 +42,7 @@ BetTraction uses a monorepo architecture with the following components:
 ## Backend
 
 ### API Server (apps/api)
+
 - **Stack**: NestJS + TypeScript + TypeORM + PostgreSQL + Redis
 - **Modules**:
   - **Auth**: JWT authentication, refresh tokens
@@ -55,10 +58,12 @@ BetTraction uses a monorepo architecture with the following components:
 ## Data Layer
 
 ### PostgreSQL
+
 - Stores all application data
 - Tables: users, bets, deposits, payouts, transactions, notifications, audit_logs, support_tickets, leaderboard
 
 ### Redis
+
 - Cache layer
 - Session storage
 - Real-time pub/sub
@@ -66,10 +71,12 @@ BetTraction uses a monorepo architecture with the following components:
 ## Web3 Layer
 
 ### Base Mainnet
+
 - Primary network for all transactions
 - Low fees, high throughput
 
 ### Vault Wallet
+
 - Address: `0xc1A020BE6548D70319a31060E32f1E2A8Cf8d930`
 - Managed escrow
 - All deposits and payouts flow through here
@@ -77,15 +84,18 @@ BetTraction uses a monorepo architecture with the following components:
 ## Infrastructure
 
 ### Docker
+
 - Containerized deployments
 - Docker Compose for local development
 
 ### Nginx
+
 - Reverse proxy
 - SSL termination
 - Load balancing
 
 ### Monitoring
+
 - **Prometheus**: Metrics collection
 - **Grafana**: Metrics visualization
 - **Sentry**: Error tracking

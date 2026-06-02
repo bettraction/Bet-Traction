@@ -9,18 +9,21 @@ Please read and follow our Code of Conduct (coming soon).
 ## How Can I Contribute?
 
 ### Reporting Bugs
+
 - Use the Bug Report template
 - Include steps to reproduce
 - Include environment details
 - Include screenshots if applicable
 
 ### Suggesting Features
+
 - Use the Feature Request template
 - Explain the problem
 - Suggest a solution
 - Consider alternatives
 
 ### Code Contributions
+
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
@@ -31,6 +34,7 @@ Please read and follow our Code of Conduct (coming soon).
 ## Development Setup
 
 ### Prerequisites
+
 - Node.js 20+
 - npm 10+
 - Docker
@@ -38,6 +42,7 @@ Please read and follow our Code of Conduct (coming soon).
 - Redis 7+
 
 ### Local Development
+
 ```bash
 # Clone repo
 git clone https://github.com/bettraction/bettraction.git
@@ -73,6 +78,7 @@ npm run dev
 ## Commit Messages
 
 We use Conventional Commits:
+
 ```
 <type>(<scope>): <subject>
 

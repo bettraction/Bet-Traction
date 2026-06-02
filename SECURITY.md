@@ -18,10 +18,12 @@ At BetTraction, we take security seriously. If you discover a security vulnerabi
 **Please do NOT create public GitHub issues for security vulnerabilities.**
 
 Instead, please report them to us via:
+
 - Email: security@bettraction.com
 - PGP Key: [Available here](https://bettraction.com/pgp-key.txt)
 
 Please include:
+
 - Description of the vulnerability
 - Steps to reproduce
 - Impact assessment

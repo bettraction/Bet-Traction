@@ -7,6 +7,7 @@ Security is our top priority at BetTraction. We implement industry best practice
 ## Security Measures
 
 ### Code Security
+
 - Regular security audits
 - Static code analysis
 - Dependency scanning (npm audit, Trivy)
@@ -14,6 +15,7 @@ Security is our top priority at BetTraction. We implement industry best practice
 - Peer review for all changes
 
 ### Infrastructure Security
+
 - Docker containers with least privilege
 - Network segmentation
 - Firewall rules
@@ -21,6 +23,7 @@ Security is our top priority at BetTraction. We implement industry best practice
 - DDoS protection
 
 ### Data Security
+
 - Encryption at rest (PostgreSQL Transparent Data Encryption)
 - Encryption in transit (TLS 1.3)
 - Secure key management
@@ -28,6 +31,7 @@ Security is our top priority at BetTraction. We implement industry best practice
 - Access logs and monitoring
 
 ### Wallet Security
+
 - Wallet signature verification
 - Nonce-based authentication
 - JWT with short expiration
