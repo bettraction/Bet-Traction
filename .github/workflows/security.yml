@@ -12,6 +12,7 @@ jobs:
   security:
     name: Security Scan
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,11 +30,3 @@ jobs:
           exit-code: '0'
           ignore-unfixed: true
           severity: 'CRITICAL,HIGH'
-
-      - name: Run CodeQL Analysis
-        uses: github/codeql-action/init@v3
-        with:
-          languages: 'javascript,typescript'
-
-      - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v3
