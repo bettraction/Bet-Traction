@@ -9,6 +9,7 @@
     "dev": "tsc --watch",
     "lint": "echo 'Linting config...'",
     "type-check": "tsc --noEmit",
+    "test": "echo 'No tests for config package'",
     "clean": "rm -rf dist"
   },
   "dependencies": {

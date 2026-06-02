@@ -9,6 +9,7 @@
     "dev": "tsc --watch",
     "lint": "echo 'Linting validators...'",
     "type-check": "tsc --noEmit",
+    "test": "echo 'No tests for validators package'",
     "clean": "rm -rf dist"
   },
   "dependencies": {
