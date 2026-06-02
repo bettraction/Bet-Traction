@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@bettraction/ui';
+import { Card, CardHeader, CardTitle, CardDescription } from '@bettraction/ui';
 
 function App() {
   return (

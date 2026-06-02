@@ -1,4 +1,12 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, ManyToOne, JoinColumn } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  CreateDateColumn,
+  UpdateDateColumn,
+  ManyToOne,
+  JoinColumn,
+} from 'typeorm';
 import { User } from '../../users/entities/user.entity';
 
 @Entity('support_tickets')
@@ -9,7 +17,7 @@ export class SupportTicket {
   @Column()
   user_id: string;
 
-  @ManyToOne(() => User, user => user.support_tickets)
+  @ManyToOne(() => User, (user) => user.support_tickets)
   @JoinColumn({ name: 'user_id' })
   user: User;
 

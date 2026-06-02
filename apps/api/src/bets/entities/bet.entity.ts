@@ -1,4 +1,13 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, ManyToOne, OneToMany, JoinColumn } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  CreateDateColumn,
+  UpdateDateColumn,
+  ManyToOne,
+  OneToMany,
+  JoinColumn,
+} from 'typeorm';
 import { User } from '../../users/entities/user.entity';
 import { Payout } from '../../payouts/entities/payout.entity';
 
@@ -10,14 +19,14 @@ export class Bet {
   @Column()
   creator_id: string;
 
-  @ManyToOne(() => User, user => user.created_bets)
+  @ManyToOne(() => User, (user) => user.created_bets)
   @JoinColumn({ name: 'creator_id' })
   creator: User;
 
   @Column({ nullable: true })
   acceptor_id: string;
 
-  @ManyToOne(() => User, user => user.accepted_bets, { nullable: true })
+  @ManyToOne(() => User, (user) => user.accepted_bets, { nullable: true })
   @JoinColumn({ name: 'acceptor_id' })
   acceptor: User;
 
@@ -65,6 +74,6 @@ export class Bet {
   @UpdateDateColumn()
   updated_at: Date;
 
-  @OneToMany(() => Payout, payout => payout.bet)
+  @OneToMany(() => Payout, (payout) => payout.bet)
   payouts: Payout[];
 }

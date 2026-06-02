@@ -7,6 +7,6 @@ import { SupportTicket } from './entities/support-ticket.entity';
 export class SupportService {
   constructor(
     @InjectRepository(SupportTicket)
-    private supportTicketsRepository: Repository<SupportTicket>,
+    private supportTicketsRepository: Repository<SupportTicket>
   ) {}
 }

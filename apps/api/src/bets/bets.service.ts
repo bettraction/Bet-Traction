@@ -7,6 +7,6 @@ import { Bet } from './entities/bet.entity';
 export class BetsService {
   constructor(
     @InjectRepository(Bet)
-    private betsRepository: Repository<Bet>,
+    private betsRepository: Repository<Bet>
   ) {}
 }

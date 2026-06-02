@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
-import { Button } from '@bettraction/ui';
 import { Home } from './pages/Home';
 
 function App() {

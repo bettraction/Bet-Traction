@@ -20,7 +20,7 @@ export class AuthController {
     return this.authService.login(
       validated.data.wallet_address,
       validated.data.signature,
-      validated.data.nonce,
+      validated.data.nonce
     );
   }
 

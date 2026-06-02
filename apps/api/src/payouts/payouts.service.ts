@@ -7,6 +7,6 @@ import { Payout } from './entities/payout.entity';
 export class PayoutsService {
   constructor(
     @InjectRepository(Payout)
-    private payoutsRepository: Repository<Payout>,
+    private payoutsRepository: Repository<Payout>
   ) {}
 }

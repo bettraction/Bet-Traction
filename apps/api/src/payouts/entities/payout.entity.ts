@@ -1,4 +1,11 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, ManyToOne, JoinColumn } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  CreateDateColumn,
+  ManyToOne,
+  JoinColumn,
+} from 'typeorm';
 import { User } from '../../users/entities/user.entity';
 import { Bet } from '../../bets/entities/bet.entity';
 
@@ -10,14 +17,14 @@ export class Payout {
   @Column()
   user_id: string;
 
-  @ManyToOne(() => User, user => user.payouts)
+  @ManyToOne(() => User, (user) => user.payouts)
   @JoinColumn({ name: 'user_id' })
   user: User;
 
   @Column()
   bet_id: string;
 
-  @ManyToOne(() => Bet, bet => bet.payouts)
+  @ManyToOne(() => Bet, (bet) => bet.payouts)
   @JoinColumn({ name: 'bet_id' })
   bet: Bet;
 

@@ -1,4 +1,11 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, OneToMany } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  CreateDateColumn,
+  UpdateDateColumn,
+  OneToMany,
+} from 'typeorm';
 import { Bet } from '../../bets/entities/bet.entity';
 import { Deposit } from '../../deposits/entities/deposit.entity';
 import { Payout } from '../../payouts/entities/payout.entity';
@@ -52,21 +59,21 @@ export class User {
   @UpdateDateColumn()
   updated_at: Date;
 
-  @OneToMany(() => Bet, bet => bet.creator)
+  @OneToMany(() => Bet, (bet) => bet.creator)
   created_bets: Bet[];
 
-  @OneToMany(() => Bet, bet => bet.acceptor)
+  @OneToMany(() => Bet, (bet) => bet.acceptor)
   accepted_bets: Bet[];
 
-  @OneToMany(() => Deposit, deposit => deposit.user)
+  @OneToMany(() => Deposit, (deposit) => deposit.user)
   deposits: Deposit[];
 
-  @OneToMany(() => Payout, payout => payout.user)
+  @OneToMany(() => Payout, (payout) => payout.user)
   payouts: Payout[];
 
-  @OneToMany(() => Notification, notification => notification.user)
+  @OneToMany(() => Notification, (notification) => notification.user)
   notifications: Notification[];
 
-  @OneToMany(() => SupportTicket, ticket => ticket.user)
+  @OneToMany(() => SupportTicket, (ticket) => ticket.user)
   support_tickets: SupportTicket[];
 }

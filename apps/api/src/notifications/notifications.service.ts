@@ -7,6 +7,6 @@ import { Notification } from './entities/notification.entity';
 export class NotificationsService {
   constructor(
     @InjectRepository(Notification)
-    private notificationsRepository: Repository<Notification>,
+    private notificationsRepository: Repository<Notification>
   ) {}
 }

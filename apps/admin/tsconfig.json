@@ -14,7 +14,16 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./",
+    "types": ["vite/client"],
+    "paths": {
+      "@bettraction/config": ["../../packages/config/src"],
+      "@bettraction/types": ["../../packages/types/src"],
+      "@bettraction/validators": ["../../packages/validators/src"],
+      "@bettraction/shared": ["../../packages/shared/src"],
+      "@bettraction/ui": ["../../packages/ui/src"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
