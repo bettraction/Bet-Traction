@@ -1,0 +1,20 @@
+# Default owners
+* @bettraction/core-team
+
+# Frontend
+apps/web/ @bettraction/frontend-team
+apps/admin/ @bettraction/frontend-team
+packages/ui/ @bettraction/frontend-team
+
+# Backend
+apps/api/ @bettraction/backend-team
+packages/types/ @bettraction/backend-team
+packages/validators/ @bettraction/backend-team
+
+# Infrastructure
+infrastructure/ @bettraction/devops-team
+.github/workflows/ @bettraction/devops-team
+
+# Security
+SECURITY.md @bettraction/security-team
+docs/security.md @bettraction/security-team
