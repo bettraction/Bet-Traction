@@ -37,6 +37,11 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "overrides": {
+    "picomatch": "^4.0.4",
+    "tmp": "^0.2.6",
+    "ws": "^8.21.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
