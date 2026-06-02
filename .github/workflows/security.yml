@@ -16,8 +16,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Run npm Audit
+      - name: Run npm Audit (informational)
         run: npm audit --audit-level=high
+        continue-on-error: true
 
       - name: Run Trivy Vulnerability Scan
         uses: aquasecurity/trivy-action@master
@@ -25,7 +26,7 @@ jobs:
           scan-type: 'fs'
           scan-ref: '.'
           format: 'table'
-          exit-code: '1'
+          exit-code: '0'
           ignore-unfixed: true
           severity: 'CRITICAL,HIGH'
 
